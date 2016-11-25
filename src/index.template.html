@@ -1,9 +1,32 @@
 <html>
 	<head>
 		<title>todo</title>
-		
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
 	</head>
 	<body>
-		asd2
+		<div id="map">I am Map</div>
+		<div id="file-upload-overlay">
+			<h1>PastaMap</h1>
+			<p>Quick and easy viewer for any(ish) file format.</p>
+			<p>
+				Supports:
+				<ul>
+					<li>Nothing</li>
+					<li>Maybe csv one day?</li>
+					<li>Geojson might be nice...</li>
+				</ul>
+			</p>
+			<h2>Usage</h2>
+			<p>
+				Drag and drop a file or use the text box below to paste your data, then hit the button
+			</p>
+
+			<textarea id="file-text-input"></textarea><br/>
+			File Type: <select>
+				<option>Auto</option>
+				<option>CSV</option>
+			</select>
+			<button id="load-data">Show me the map</button>
+		</div>
 	</body>
 </html>	
