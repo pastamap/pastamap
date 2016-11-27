@@ -1,11 +1,14 @@
 var path = require('path');
+var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 const plugins = [];
 const TRAVIS = process.env.TRAVIS ? JSON.parse(process.env.TRAVIS) : false;
 if (TRAVIS) {
 	console.log('TRAVIS mode (will fail on error)');
+	var webpack = require('webpack');
 	plugins.push(new webpack.NoErrorsPlugin());
 }
 
