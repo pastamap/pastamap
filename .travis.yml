@@ -5,4 +5,8 @@ before_script:
   - npm install -g webpack
 script:
   - webpack
-#  - bash ./.travis-deploy.sh
+  - bash ./.travis-deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: 68bc5b7afdbb
+  - COMMIT_AUTHOR_EMAIL: "auto@travis-ci.org"
