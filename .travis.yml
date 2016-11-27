@@ -8,5 +8,5 @@ script:
   - bash ./.travis-deploy.sh
 env:
   global:
-  - ENCRYPTION_LABEL: 68bc5b7afdbb
+  - ENCRYPTION_LABEL: 73247bdc3ba7
   - COMMIT_AUTHOR_EMAIL: "auto@travis-ci.org"
