@@ -6,6 +6,7 @@ module.exports = {
 	context: __dirname + path.sep + 'src',
 	entry: './index.ts',
 	devtool: 'inline-source-map',
+	devServer: { inline: true },
 	output: {
 		path: __dirname + path.sep + 'dist',
 		filename: 'bundle.js'

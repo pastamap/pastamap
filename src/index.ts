@@ -7,8 +7,8 @@ document.getElementById('load-data').onclick = () => {
 }
 
 let map = L.map('map', {
-    center: L.latLng(0, 0),
-	zoom: 0,
+	//center: L.latLng(0, 0),
+	//zoom: 0,
 
 	layers:
 	[
@@ -23,3 +23,5 @@ let map = L.map('map', {
 	})*/
 	],
 });
+map.fitBounds(L.latLngBounds([[-48, 179], [-33, 164]]), {});
+
